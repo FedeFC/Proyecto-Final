@@ -1,0 +1,681 @@
+/* Resteo General */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* ---  Sección header  --- */
+.header-container{
+
+    background:linear-gradient(to bottom, #12123D,#45368cce);
+    padding: 15px 0px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    
+}
+
+.header-logo{
+    display: flex;
+    margin-right: 205px;
+    padding-left: 15px;
+}
+#imagen{
+    width: 50px;
+    height: 46px;
+    margin-right: 500px;
+}
+    
+
+.header-nav {
+    width: 50%;
+  
+     
+}
+
+.lista-nav{
+    list-style: none; 
+    display: flex;
+    justify-content:space-around;
+    padding: 0px;
+    align-items:center;
+   
+    
+}
+.enlaces{
+    color: #d4aa00f6;
+    border-top: solid 2px  #907300f6;
+   
+    text-decoration: none;
+    
+    
+}
+.li-nav{
+    margin: 20px 0px -10px 0px;
+}
+
+/* Navbar 2 -- Bootstrap */
+#imagen2{
+    justify-content: start;
+}
+/* Navbar 3 - Grid y responsive */
+
+header{
+    position:fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    /* background-color: grey; */
+    background:linear-gradient(to bottom, #12123D,#45368cce);
+}
+
+
+.container{
+    width: 1280px;
+    margin: auto;
+}
+
+.nav_checkbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 10px 0px;
+
+}
+.logo{
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+}
+.tab-nav{
+    outline: none;
+    display: none;
+}
+
+.label{
+    display: none;
+    color:white;
+
+}
+.burger{
+    width: 35px;
+    height: 5px;
+    background-color: rgb(186, 198, 26);
+    margin-top: 5px;
+}
+
+
+.content_nav{
+    grid-column: 3;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+.content_nav li{
+    display: inline-block;
+    padding-right: 10px;   
+
+}
+.content_nav li a{
+    
+    text-decoration: none;
+    color: rgb(222, 205, 215);
+    font-weight:500;
+    position: relative;
+    
+}
+.content_nav li a::after{
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: white;
+    position:absolute;
+    left: 0;
+    right: 0;
+    transform-origin:top;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 0.5s;
+
+}
+
+.content_nav li a:hover::after{
+    transform: scale( 1, 1 );
+
+}
+.content_section{
+    height: 110vh;
+    background-image: url(/Img/back4.jpg); /* ver fondo de imagen  */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+
+}
+
+@media screen and (max-width: 1280px){
+    .container{
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width: 770px){
+   
+    .label{
+
+        display: grid;
+        cursor: pointer;
+        grid-column: 3;
+        padding-right: 10px;
+
+    }
+
+    .content_nav{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 1/4;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: all ease-in-out 0.6s;
+
+    }
+
+    .nav_checkbox input:checked ~ .content_nav{
+        
+        max-height: 500px;
+
+    }
+
+    .content_nav li{
+        padding: 15px 0px;
+    }
+
+}
+
+
+
+
+
+/* Main */
+/* Seccion Uno - Carrousel de Imagenes */
+.slide{
+    margin-top: 10px;
+    
+}
+.slide img{
+    height: 95vh;
+}
+#nav-link{
+ color: wheat;
+}
+    
+
+/* Seccion dos */
+
+#Nosotros-index{
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #D4AA00;
+    padding: 10px;
+}
+
+.nosotros-container{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #4f4f95f3;
+    display: flex;
+    justify-content: center;
+
+}
+
+.nosotros-texto{
+    
+    /* display: flex;
+    justify-content: space-around; */
+    position: initial;
+    width: 550px;
+    height: 380px;
+    /* color: #12123D; */
+    color: #FFFFFF;
+    padding-top: 100px;
+    text-align: justify;
+    
+}
+
+.nosotros-img{
+    height: 550px;
+    width: 550px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 155px;
+    margin-right: 15px;
+    overflow: hidden;
+    padding: 5px;
+    
+}
+
+
+/* Seccion 3 */
+.instalaciones-container {
+    text-align: left;
+    width: fit-content;
+    margin: auto;
+    padding: 80px 0px;
+}
+
+
+
+.lista-instalaciones{
+    list-style-type:square;
+    font-size: 25px;
+    line-height: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Seccion 4  */
+
+#seccion4{
+    text-align: center;
+    font-size: 40px;
+   
+    
+}
+/* .Sec4{
+    border-top: solid 2px violet;
+} */
+.informacion-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.seccion4-container{
+    display: flex;
+    justify-content:space-around;
+    border: solid 1px gray;
+    margin: 15px ;
+    height: 430px;
+}
+.direcciones-container{
+
+    display: flex;
+    justify-content: start;
+    margin-top: 55px;
+    margin-block-end: 55px;
+    margin-left: 55px;
+}
+.lista-direcciones{
+    list-style-type: none;
+    align-items: center;
+    
+}
+.horarios-contatiner{
+    display: flex;
+    justify-content:space-between;
+    list-style-type: none;
+    margin-top: 25px;
+    margin-right: 50px;
+    
+}
+.lista-horarios{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin-left: 55px;
+}
+.imagen-ubicacion{
+    margin: 15px 15px;
+    padding: 4px;
+    border: solid 2px rgb(70, 70, 70);
+    border-radius: 8px;
+    box-shadow: 10px 4px 25px 3px #D4AA00;
+
+}
+
+
+.main-logo{
+    display: flex;
+   justify-content: center;
+   
+}
+/* Footer */
+
+.footer-logo{
+    padding: 15px;
+    
+}
+#img-logo-footer{
+    height: 70px;
+    width: 70px;
+    padding-top: 20px;
+}
+.footer-container{
+    background:linear-gradient(to top, #05051b,#2e1d87ce);
+    border-top: #D4AA00 solid 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px ;
+
+
+}
+
+.footer-nav{
+    width: 30%;
+    margin-right: 480px;
+}
+
+.footer-lista{
+    list-style: none;
+    font-size: 14px;
+    padding-top: 15px;
+    
+    
+}
+.footer-redes-container{
+    margin-right: 15px;
+}
+
+.enlaces-footer{
+    color: #d4aa00f6; 
+    text-decoration: none;
+    font-size: 15px;
+}
+.redes-container{
+    
+    text-align: center;
+    margin-right: 70px;
+    padding-right: 8px;
+    color: #d4aa00f6;
+
+}
+.footer-redes{
+    margin-right: 70px;
+}
+.img-redes{
+    
+    width: 47px;
+    height: auto;
+}
+
+/* Actividades */
+
+.pases-libres{
+    text-align: center;
+    margin: 10px 0px 10px 0px ;
+    font-size: 25px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+.pases-libres-container {
+    display: flex;
+    margin: 10px;
+    border-bottom: solid 2px #D4AA00;
+    background: linear-gradient(to top, #05051b94,#493d86ce);
+    max-width: 1100px;
+    margin: auto;
+}
+
+.pases-libres-info {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    font-size: 20px;
+    padding: 40px;
+    width: 500px;
+    background-color: rgb(241, 237, 237);
+}
+
+.texto-pases{
+    text-align:justify;
+    width: 500px;
+    padding-left: 15px;
+}
+.pases-lib-tit{
+    text-align: center;
+    margin-right: 525px;
+    margin-bottom: 15px;
+    color: #D4AA00;
+}
+.pases-libres-horarios {
+    margin-left: 30px;
+    text-align: justify;
+    font-size: 20px;
+    width: 300px;
+    padding: 40px;
+}
+
+
+.pases-libres-lista{
+    list-style-type: none;
+    color:  rgb(226, 224, 219);
+}
+.clases-entrenamiento-container {
+    display: flex;
+    border-bottom: solid 2px #D4AA00;
+    background: linear-gradient(to top, #05051b98,#736e8ace);
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* Staff */
+.body-container{
+    background:linear-gradient(to top, #09094db8,#ffffffe7);
+}
+.main-container{
+    max-width: 1580px;
+    text-align: center;
+    margin: auto;
+}
+.staff-nosotros{
+    text-align:  center;
+    font-size: 40px;
+    color: #D4AA00;
+}
+
+.staff-info{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    margin-top: 10px ;
+    margin-left: 20px ;
+    margin-right: 20px;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 63px;
+    grid-row-gap: 25px;
+    margin: 35px 35px 30px 35px;
+    
+    }
+
+.div1 { grid-area: 1 / 1 / 2 / 3; }
+.div2 { grid-area: 2 / 1 / 3 / 2; }
+.div3 { grid-area: 2 / 2 / 3 / 3; }
+
+.div1, .div2, .div3 {
+    border: solid 2px black;
+    border-radius: 40px;
+    background-color: #FFFFFF;
+    max-width: 500px;
+    margin: auto;
+    padding: 40px;
+}
+.titulo-prof{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+    color:#D4AA00;
+}
+.img-div{
+    
+    width: 300px;
+    height: 280px;
+}
+
+
+.lista-staff{
+    list-style-type: none;
+    text-align: center;
+    padding-top: 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    line-height: 30px;
+    
+}
+
+.lista-staff-container{
+    text-align: center;
+
+}
+.staff-nombre{
+    text-align: center;
+    font-size: 35px;
+   
+
+}
+
+
+/* Turnos y tarifas */
+.section-tyt1, .section-tyt3{
+    /* padding-bottom: 20px; */
+    
+    padding: 0px 5px 20px 5px;
+    background-color: rgb(214, 205, 245);
+
+}
+.section-tyt2{
+
+    background-color: rgb(201, 185, 201);
+}
+.titulo-tarifas{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: #D4AA00;
+    padding-top: 15px;
+    
+}
+
+.turnos-tarifas-container {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr) repeat(3, 1fr);
+    grid-template-rows: 1fr 4fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+    }
+    
+.turnos-div1 { 
+    grid-area: 1 / 1 / 2 / 3; 
+    text-align: center;
+    margin-left: 5px;
+    border-bottom: solid 1px #D4AA00;
+    padding-top: 30px;
+    color: #252582;
+    font-size: 20px;
+    
+
+
+}
+.turnos-div2 { 
+    grid-area: 1 / 3 / 2 / 6;
+    text-align: center;
+    margin-right: 5px;
+    border-bottom: solid 1px #D4AA00;
+    color: #252582;
+    padding-top: 30px;
+    font-size: 20px;
+ }
+.turnos-div3 { 
+    grid-area: 2 / 1 / 3 / 3;
+    /* border: solid 1px black; */
+    margin-left: 5px;
+    text-align: center;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 28px;
+    
+    
+}
+ .turnos-div5, .turnos-div6{
+    /* border: solid 1px black; */
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    color: #9400d4d4;
+}
+
+.turnos-div4 {
+     grid-area: 2 / 3 / 3 / 4;
+     padding-left: 100px;
+     
+    
+}
+.imgpk1{
+    height: auto;
+    width: 150px;
+}
+.turnos-div5 { 
+    grid-area: 2 / 4 / 3 / 5;
+    
+}
+
+.turnos-div6 { 
+    grid-area: 2 / 5 / 3 / 6;
+    margin-right: 5px;
+}
+.turnos-lista{
+    list-style-type: none;
+    color: black;
+    text-align: start;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+
+    
+}
+.turnos-escuelita{
+    padding-top: 90px;
+    text-align: start;
+}
+
+.img-contacto-container{
+    width: 100%;
+    height: 600px;
+}
+.ubicacion-contacto-container{
+    margin: 25px 45px 30px 45px;
+    padding-left: 140px;
+}
+.contacto{
+    padding-bottom: 20px;
+}
+.contacto-titulo{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 28px;
+    border-top: solid 2px #D4AA00;
+    font-size: 40px;
+}
+.imgcto{
+    padding-top: 100px;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocodromo</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/Img/logo3.jpg" type="image/x-icon">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- Bootstrap Contacto -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    
+</head>
+<body>
+    <header class="header-container">
+        <div class="header-logo">
+          <img src="Img/logo.png" alt="logo" id="imagen">
+        </div>
+        <!-- Zona navegable -->
+        <nav class="header-nav"> 
+          <ul class="lista-nav">
+            <li class="li-nav"><a href="index.html" class="enlaces">Inicio</a></li>
+            <li class="li-nav" ><a href="actividades.html" class="enlaces">Actividades</a></li>
+            <li class="li-nav"><a href="staff.html" class="enlaces">Staff</a></li>
+            <li class="li-nav"><a href="turnosYTarifas.html" class="enlaces">Turnos y tarifas</a></li>
+            <li class="li-nav"><a href="contacto.html" class="enlaces">Contacto</a></li>
+          </ul>
+        </nav> 
+    </header>
+    <main>
+      <!-- img comienzo -->
+      <section class="img-contacto-container">
+        <img src="Img/img4.jpg" alt="imagen del Rocodromo"  class="img-contacto-container">
+      </section>
+      <!-- img comienzo -->
+      <section>
+        <div class="ubicacion-contacto-container"> 
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.008499474533!2d-57.99599058554223!3d-34.88113288038855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e7129c6e9401%3A0x2ea980731193de69!2sRoc%C3%B3dromo!5e0!3m2!1ses!2sar!4v1661614115849!5m2!1ses!2sar" width="1000" height="470" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+      <!-- contacto -->
+      <section>
+        <div>
+          <div class="container contacto">
+            <h3 class="contacto-titulo">Contacto</h3>
+            <br>
+            <div class="row" >
+               <div class="col-sm-6">
+                 <img class="imgcto" src="Img/contacto.png" alt="">
+               </div>
+               <div class="col-sm-6">
+                 <form >
+                   <div class="form-group"  id="margen">
+                     <label for="nombreApellido">Nombre y Apellido:</label>
+                     <input type="text" class="form-control" id="nombreApellido" aria-describedby="nombreHelp" placeholder="Escriba su nombre aqui" name="nombre" required>
+                     <br>
+                     <label for="exampleInputEmail1">Email:</label>
+                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="tucorreo@ejemplo.com" name="correo" required>
+                     <br>
+                     <label for="telefono">Telefono:</label>
+                     <input type="tel" class="form-control" id="telefono" aria-describedby="telefonolHelp"  placeholder="Escriba tu telefono aqui" name="numero" required>
+                     <br>
+                     <label for="areatext">Mensaje:</label>
+                     <br>
+                     <textarea name="comentario" id="areatext" cols="75" rows="6" placeholder="Escriba su mensaje aqui" ></textarea>
+                     <br>
+                     <br>
+                     <button type="submit" class="btn btn-primary">Enviar</button>
+                   </div>
+                 </form>
+               </div>
+             </div>
+          </div>
+         </div>
+
+      </section>
+    </main>
+    <footer class="footer-container">
+        <div class="footer-logo">
+          <img src="Img/logo.png" alt="logo de la marca" id="img-logo-footer">
+        </div>
+        <!-- seccion navegable del footer -->
+        <nav class="footer-nav">
+          <ul class="footer-lista">
+            <li><a href="index.html" class="enlaces-footer">Inicio</a></li>
+            <li><a href="actividades.html" class="enlaces-footer">Actividades</a></li>
+            <li><a href="staff.html" class="enlaces-footer">Staff</a></li>
+            <li><a href="turnosYTarifas.html" class="enlaces-footer">Turnos y tarifas</a></li>
+            <li><a href="contacto.html" class="enlaces-footer">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="footer-redes-container"> 
+          <h5 class="redes-container">Redes</h5>
+          <div class="footer-redes">
+              <a href="https://www.instagram.com/" target="_blank">
+                <img class="img-redes" src="Img/instagramIcon.png" alt="logo de instagram" >
+              </a>
+              <a href="https://www.facebook.com/" target="_blank" >
+                <img class="img-redes" src="Img/facebookIcon.png" alt="logo de facebook" >
+              </a>
+          </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>

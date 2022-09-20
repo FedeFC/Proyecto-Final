@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Rocodromo</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="Img/logo3.jpg" type="image/x-icon">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body >
+  
+  <!-- <header class="header-container">
+    <div class="header-logo">
+      <img src="Img/logo.png" alt="logo" id="imagen">
+    </div>
+    <nav class="header-nav"> 
+      <ul class="lista-nav">
+        <li class="li-nav"><a href="index.html" class="enlaces">Inicio</a></li>
+        <li class="li-nav" ><a href="actividades.html" class="enlaces">Actividades</a></li>
+        <li class="li-nav"><a href="staff.html" class="enlaces">Staff</a></li>
+        <li class="li-nav"><a href="turnosYTarifas.html" class="enlaces">Turnos y tarifas</a></li>
+        <li class="li-nav"><a href="contacto.html" class="enlaces">Contacto</a></li>
+      </ul>
+    </nav> 
+  </header> -->
+  <header>
+    <div class="container">
+      <nav class="nav_checkbox">
+        <a href="#" class="logo"><h2>Rocódromo</h2></a>
+        <input type="checkbox"  id="tab-nav" class="tab-nav">
+        <label for="tab-nav" class="label">
+          <div class="burger"></div>
+          <div class="burger"></div>
+          <div class="burger"></div>
+        </label>
+        <ul class="content_nav">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="actividades.html">Actividades</a></li>
+          <li><a href="staff.html">Staff</a></li>
+          <li><a href="turnosYTarifas.html">Clases y Turnos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main >
+        <!-- Seccion uno  - Imagenes con carrousel-->
+    <section >
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img3.jpg" class="d-block w-100" alt="primer imagen">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Img/img4.jpg" class="d-block w-100" alt="segunda imagen">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Img/img5.jpg" class="d-block w-100" alt="tercer imagen">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+      </section>
+      <hr>
+      <!-- Seccion dos - Sobre nosotros -->
+      
+      <h1 id="Nosotros-index">Nosotros</h1>
+      
+      <Section class="nosotros-container">
+        <div class="nosotros-texto">
+          <p>
+            Contamos con un muro para la práctica de la escalada deportiva con más de 500 metros cuadrados que nos permite la práctica en todas las modalidades, ya sea top-rope, equipando o boulder. <br>
+            Además de brindarnos la posibilidad de dictar distintas capacitaciones para lograr desarrollar esta actividad en un entorno seguro. <br>
+            Nuestras instalaciones se modifican constantemente para adquirir las mejores características adaptadas a las necesidades de la constante evolución de los escaladores. <br>
+            Contamos con las mejores herramientas de entrenamiento para lograr progresar de la manera mas eficiente posible.
+          </p>
+        </div>
+        <div class="nosotros-img">
+          <img  class ="img-nos" src="Img/nosotros-img.jpg" alt="imagen de nuestras instalaciones">
+        </div>
+      </Section>
+      
+      <!-- Seccion 3 caracteristicas sobre nuestras instalaciones -->
+      
+      <section>
+          <div class="instalaciones-container">
+            <ul class="lista-instalaciones">
+              <li>Más de 500m2 de instalaciones.</li>
+              <li>Zona infantil diferenciada.</li>
+              <li>Zona de boulder y de escalada deportiva.</li>
+              <li>Dictado de Capacitaciones.</li>
+              <li>Clases libres y personalizadas.</li>
+              <li>Escuelita para niños.</li>
+              <li>Abierto todos los días de la semana.</li>
+              <li>Estacionamiento privado.</li>
+              <li>A una cuadra del transporte público.</li>
+            </ul>
+          </div>
+        </section>
+        <hr>
+        <!-- Seccion 4 ubicacion y horarios -->
+        <div class="Sec4">
+        <h4 Id="seccion4">Ubicación y Horarios</h4>
+        </div>
+          <section class="seccion4-container">
+            <div clas ="informacion-container">
+              <div class="direcciones-container">
+                <ul class="lista-direcciones">
+                    <li>
+                      <i class="fa-sharp fa-solid fa-location-dot"></i>
+                      <a>Avenida Siempre Viva 12</a>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-envelope"></i><a>Rocodromo@lop.com.ar</a>
+                    </li>
+                    <li>
+                    <!-- <img src="/Img/phoneImg.png" alt="" width="30" height="24" ><a>221-123456</a> -->
+                      <i class="fa-solid fa-phone"></i> <a>221-123456</a>
+                    </li>
+                </ul>
+              </div>
+              <div class="horarios-container">  
+                <ul class="lista-horarios">
+                  <li>Lunes y Viernes : 8:00 a 22:00 hs.</li>
+                  <li>Sábados : 11:00 a 22:00 hs.</li>
+                  <li>Domingos : 12:00 a 20:00 hs.</li>
+                </ul>
+              </div>
+            </div> 
+            <!-- mapa de ubicación -->
+            <div class="imagen-ubicacion"> 
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.008499474533!2d-57.99599058554223!3d-34.88113288038855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e7129c6e9401%3A0x2ea980731193de69!2sRoc%C3%B3dromo!5e0!3m2!1ses!2sar!4v1661614115849!5m2!1ses!2sar" width="500" height="370" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </section>
+        <div class="main-logo">
+        <img src="Img/logo.png" alt="logo de la marca" clas="logo-final">
+        </div>
+  </main>
+  <hr>
+    <!-- Comienzo de footer -->
+  <footer class="footer-container">
+      <div class="footer-logo">
+        <img src="Img/logo.png" alt="logo de la marca" id="img-logo-footer">
+      </div>
+      <!-- seccion navegable del footer -->
+      <nav class="footer-nav">
+        <ul class="footer-lista">
+          <li><a href="index.html" class="enlaces-footer">Inicio</a></li>
+          <li><a href="actividades.html" class="enlaces-footer">Actividades</a></li>
+          <li><a href="staff.html" class="enlaces-footer">Staff</a></li>
+          <li><a href="turnosYTarifas.html" class="enlaces-footer">Turnos y tarifas</a></li>
+          <li><a href="contacto.html" class="enlaces-footer">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="footer-redes-container"> 
+        <h5 class="redes-container">Redes</h5>
+        <div class="footer-redes">
+            <a href="https://www.instagram.com/" target="_blank">
+              <img class="img-redes" src="Img/instagramIcon.png" alt="logo de instagram" >
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" >
+              <img class="img-redes" src="Img/facebookIcon.png" alt="logo de facebook" >
+            </a>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
